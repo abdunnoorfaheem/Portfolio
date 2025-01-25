@@ -1,20 +1,17 @@
-import React from 'react'
-
+import React from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router";
 
-const About = () => {
+const AboutMe = () => {
   return (
-    <>
-    
-    <section className="bg-gradient-to-r from-black via-gray-900 to-black text-white py-16 h-[100vh] flex justify-center items-center">
+    <section className="bg-gradient-to-r from-black via-gray-900 to-black text-white py-16">
       <div className="container mx-auto px-6 lg:px-12">
        
         <motion.h2
           className="text-5xl font-bold text-center mb-8"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.15 }}
+          transition={{ duration: 0.8 }}
         >
           About Me
         </motion.h2>
@@ -61,9 +58,7 @@ const About = () => {
         </motion.div>
       </div>
     </section>
-    
-    </>
-  )
-}
+  );
+};
 
-export default About;
+export default AboutMe;

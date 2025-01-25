@@ -22,7 +22,7 @@ const Hero = () => {
             </p>
             <div className="pt-8">
               <a
-                href="/path-to-cv.pdf"
+                href=""
                 download
                 className="border-2 rounded-full py-3 px-8 text-lg font-medium hover:bg-gradient-to-r from-purple-500 to-pink-500 hover:text-white transition-all duration-300"
               >
