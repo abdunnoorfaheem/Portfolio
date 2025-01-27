@@ -21,7 +21,7 @@ const skillImages = [
   { name: 'Redux', src: redux },
   { name: 'Next.js', src: nextjs },
   { name: 'Firebase', src: firebase },
-  { name: 'git & github', src: git },
+  { name: 'Git & Github', src: git },
 ];
 
 const Skills = () => {
