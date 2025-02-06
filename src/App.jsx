@@ -1,23 +1,18 @@
-import React from 'react';
-import './App.css';
-import Home from './pages/Home';
-import {Outlet} from 'react-router-dom';
-import Footer from './pages/Footer';
-import Navbar from './components/Navbar';
-
+import React from "react";
+import "./App.css";
+import Home from "./pages/Home";
+import { Outlet } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import FooterBottom from "./components/FooterBottom";
 
 function App() {
-
-
-
   return (
     <>
-      <Navbar/>
-      <Outlet/>
-      <Footer/>
-      
+      <Navbar />
+      <Outlet />
+      <FooterBottom />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

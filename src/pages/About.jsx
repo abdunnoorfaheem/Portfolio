@@ -2,12 +2,13 @@ import React from 'react'
 
 import { motion } from "framer-motion";
 import { Link } from "react-router";
+import Footer from './Footer';
 
 const About = () => {
   return (
     <>
     
-    <section className="bg-gradient-to-r from-black via-gray-900 to-black text-white py-16 md:h-[100vh] md:flex justify-center items-center">
+    <section className="bg-gradient-to-r from-black via-gray-900 to-black text-white py-16 lg:h-[100vh] md:flex justify-center items-center">
       <div className="container mx-auto px-6 lg:px-12">
        
         <motion.h2
@@ -61,6 +62,7 @@ const About = () => {
         </motion.div>
       </div>
     </section>
+    
     
     </>
   )

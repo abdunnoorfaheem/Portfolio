@@ -1,9 +1,11 @@
 import React from "react";
 import { FaPhoneAlt, FaEnvelope } from "react-icons/fa";
 import { FaSquareGithub } from "react-icons/fa6";
+import FooterBottom from "../components/FooterBottom";
 
 const Footer = () => {
   return (
+    <>
     <footer className="bg-gradient-to-r from-gray-900 to-gray-800 text-white py-16">
       <div className="container mx-auto flex flex-col md:flex-row items-center justify-between px-8">
         
@@ -60,8 +62,11 @@ const Footer = () => {
           </form>
         </div>
       </div>
-      <div className="text-center text-xl md:text-4xl pt-8 md:pt-20">&copy;2024 All Rights Reserved by <i className="font-bold md:text-5xl">Noor</i></div>
+      
     </footer>
+
+    
+    </>
   );
 };
 

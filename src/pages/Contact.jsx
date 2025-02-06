@@ -1,66 +1,75 @@
 import React from 'react';
+import { FaPhoneAlt, FaEnvelope } from "react-icons/fa";
+import { FaSquareGithub } from "react-icons/fa6";
+
 
 const Contact = () => {
   return (
-    <div className="min-h-screen bg-black text-white flex items-center justify-center p-4">
-      <div className="max-w-6xl w-full grid grid-cols-1 md:grid-cols-2 gap-8">
-        
-        <div className="bg-gray-900 p-6 rounded-2xl shadow-lg">
-          <h2 className="text-2xl font-bold mb-4">Leave A Reply</h2>
-          <p className="mb-4 text-gray-400 text-sm">
-            Your email address will not be published. Required fields are marked *
-          </p>
-          <form>
-            <div className="mb-4">
-              <input
-                type="text"
-                placeholder="Your Name"
-                className="w-full bg-gray-800 p-3 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-white-500"
-              />
-            </div>
-            <div className="mb-4">
-              <input
-                type="email"
-                placeholder="Your Email"
-                className="w-full bg-gray-800 p-3 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-white-500"
-              />
-            </div>
-            <div className="mb-4">
-              <textarea
-                placeholder="Write Message"
-                rows="5"
-                className="w-full bg-gray-800 p-3 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-white-500"
-              ></textarea>
-            </div>
-            <button
-              type="submit"
-              className="border-2 border-white text-white  px-6 py-3 rounded-3xl font-bold hover:bg-gradient-to-r from-purple-500 to-pink-500 hover:text-white transition-all duration-300"
-            >
-              Submit Message →
-            </button>
-          </form>
-        </div>
+    <>
 
+<footer className="bg-gradient-to-r from-gray-900 to-gray-800 text-white py-16">
+      <div className="container mx-auto flex flex-col md:flex-row items-center justify-between px-8 md:h-[100vh]">
         
-        <div className="bg-gray-900 p-6 rounded-2xl shadow-lg">
-          <h2 className="text-2xl font-bold mb-4">Feel Free To Contact Me Anytime</h2>
-          <div className="space-y-4">
-            <div className="bg-gray-800 p-4 rounded-lg">
-              <h3 className="text-sm text-gray-400">Email</h3>
-              <p className="text-lg font-medium">abdunnoor@gmail.com</p>
+        <div className="text-center md:text-left mb-8 md:mb-0 max-w-lg">
+          <h2 className="text-3xl md:text-6xl font-extrabold text-white">Get in Touch with Confidence</h2>
+          <p className="text-gray-400 mt-3 text-base leading-relaxed">
+            Fill out the form below to connect with me, or call during business hours
+            (9:00 a.m. - 6:00 p.m. BST, Sunday to Thursday).
+          </p>
+          <div className="mt-6 space-y-4">
+            <div className="flex items-center space-x-4 text-white text-lg">
+              <FaPhoneAlt className="text-xl" />
+              <span className="font-semibold">+8801535452284</span>
             </div>
-            <div className="bg-gray-800 p-4 rounded-lg">
-              <h3 className="text-sm text-gray-400">Phone</h3>
-              <p className="text-lg font-medium">+8801535452284</p>
+            <div className="flex items-center space-x-4 text-white text-lg">
+              <FaEnvelope className="text-xl" />
+              <span className="font-semibold">abdunnoor2450@gmail.com</span>
             </div>
-            <div className="bg-gray-800 p-4 rounded-lg">
-              <h3 className="text-sm text-gray-400">Address</h3>
-              <p className="text-lg font-medium">Mirpur-11, Dhaka-1216</p>
+            <div className="flex items-center space-x-4 text-white text-lg">
+              <FaSquareGithub className="text-xl" />
+              <span className="font-semibold"><a href="https://github.com/abdunnoorfaheem">https://github.com/abdunnoorfaheem</a></span>
             </div>
           </div>
         </div>
+
+       
+        <div className="w-full md:w-1/2 bg-gray-800 p-8 rounded-xl shadow-xl">
+          <form>
+            <input
+              type="text"
+              placeholder="Your Name"
+              className="w-full p-4 mb-4 bg-gray-700 text-white rounded-md focus:ring-2 focus:ring-blue-400"
+            />
+            <input
+              type="email"
+              placeholder="Your Email"
+              className="w-full p-4 mb-4 bg-gray-700 text-white rounded-md focus:ring-2 focus:ring-blue-400"
+            />
+            <input
+              type="text"
+              placeholder="Your Phone"
+              className="w-full p-4 mb-4 bg-gray-700 text-white rounded-md focus:ring-2 focus:ring-blue-400"
+            />
+            <textarea
+              placeholder="Your message here"
+              className="w-full p-4 mb-4 bg-gray-700 text-white rounded-md h-40 focus:ring-2 focus:ring-blue-400"
+            ></textarea>
+            <button
+              type="submit"
+              className="border-2 w-full hover:bg-gradient-to-r from-purple-500 to-pink-500 hover:text-white transition-all duration-300 text-white py-4 rounded-4xl flex items-center justify-center font-bold text-lg shadow-md"
+            >
+              Send Message 
+            </button>
+          </form>
+        </div>
       </div>
-    </div>
+      
+    </footer>
+
+    
+    
+    </>
+  
   );
 };
 

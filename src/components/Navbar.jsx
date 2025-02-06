@@ -16,8 +16,8 @@ const Navbar = () => {
   
 
   return (
-    <section className="bg-black text-white">
-      <div className="container mx-auto flex items-center justify-between py-4 px-8">
+    <section className="bg-black text-white sticky top-0 z-50">
+      <div className="container mx-auto flex items-center justify-between py-4 px-8 ">
         <Link to="/">
           <h3 className="text-2xl font-bold">
             <em>Abdun Noor</em>

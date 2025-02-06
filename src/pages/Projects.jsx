@@ -1,8 +1,18 @@
 import React from 'react'
+import ProjectsList from '../components/ProjectsList';
 
 const Projects = () => {
   return (
-    <div>Projects</div>
+    <>
+    
+   <section className="md:h-[100vh] bg-black">
+
+   <ProjectsList/>
+   
+   
+    
+    </section> 
+    </>
   )
 }
 
