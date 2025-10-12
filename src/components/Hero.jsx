@@ -22,7 +22,7 @@ const Hero = () => {
               experiences.
             </p>
 
-            {/* ✅ CV Download Button */}
+            {/*CV Download Button */}
             <div className="pt-8">
               <a
                 href={`${import.meta.env.BASE_URL}cv.pdf`}
