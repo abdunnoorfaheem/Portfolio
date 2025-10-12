@@ -3,6 +3,8 @@ import { motion } from 'framer-motion';
 import projectOne from '../assets/projectOne.png';
 import projectTwo from '../assets/projectTwo.png';
 import projectThree from '../assets/projectThree.png';
+import projectFour from '../assets/projectFour.png';
+
 
 const projects = [
   {
@@ -25,6 +27,13 @@ const projects = [
     image: projectThree,
     github: "https://github.com/abdunnoorfaheem",
     live: "https://geometries-genius.netlify.app/",
+  },
+  {
+    id: 4,
+    title: "cartivo",
+    image: projectFour,
+    github: "https://github.com/abdunnoorfaheem",
+    live: "https://cartivo-pink.vercel.app/",
   },
 ];
 
@@ -60,6 +69,7 @@ const ProjectsList = () => {
             </motion.div>
           ))}
         </div>
+       
       </div>
     </section>
   );

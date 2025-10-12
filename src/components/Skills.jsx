@@ -11,6 +11,7 @@ import firebase from '../assets/firebase.png';
 import git from '../assets/git.png';
 import js from '../assets/js.jpeg';
 
+
 const skillImages = [
   { name: 'HTML', src: html },
   { name: 'CSS', src: css },
@@ -25,9 +26,12 @@ const skillImages = [
 ];
 
 const Skills = () => {
+  
   return (
-    <section className="relative bg-black text-white py-20 px-6 sm:px-10 lg:px-20 overflow-hidden">
-    <div className="absolute inset-0 bg-gradient-to-b from-gray-900 to-black opacity-80"></div>
+  <>
+  <section className=''>
+      <div className="relative bg-black text-white py-20 px-6 sm:px-10 lg:px-20 overflow-hidden ">
+    <div className="absolute inset-0 bg-gradient-to-b from-gray-900 to-black opacity-80 "></div>
     <motion.div
       initial={{ opacity: 0, y: -50 }}
       animate={{ opacity: 1, y: 0 }}
@@ -49,7 +53,7 @@ const Skills = () => {
           key={index}
           whileHover={{ scale: 1.15 }}
           whileTap={{ scale: 0.95 }}
-          className="flex flex-col items-center justify-center bg-gradient-to-r from-indigo-600 to-purple-600 text-white font-semibold text-center rounded-xl shadow-md py-6 px-4 transform transition-all duration-300 hover:shadow-lg hover:from-pink-500 hover:to-yellow-500"
+          className="flex flex-col items-center justify-center bg-gradient-to-r from-indigo-600 to-purple-600 text-white font-semibold text-center rounded-xl shadow-md py-6 px-4 transform transition-all duration-300 hover:shadow-lg hover:from-pink-500 hover:to-yellow-500" 
         >
           <img src={skill.src} alt={skill.name} className="w-16 h-16 mb-4" />
           <span className="text-base sm:text-lg lg:text-xl">{skill.name}</span>
@@ -59,7 +63,9 @@ const Skills = () => {
 
     <div className="absolute top-10 left-10 w-20 h-20 sm:w-40 sm:h-40 bg-purple-500 rounded-full blur-3xl opacity-40 animate-pulse"></div>
     <div className="absolute bottom-20 right-20 w-32 h-32 sm:w-64 sm:h-64 bg-indigo-700 rounded-full blur-2xl opacity-50 animate-pulse"></div>
+  </div>
   </section>
+  </>
   );
 };
 
