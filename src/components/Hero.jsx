@@ -27,7 +27,7 @@ const Hero = () => {
               <a
                 href={`${import.meta.env.BASE_URL}cv.pdf`}
                 download="Md_Abdun_Noor_CV.pdf"
-                className="border-2 border-purple-500 rounded-full py-3 px-8 text-lg font-medium hover:bg-gradient-to-r from-purple-500 to-pink-500 hover:text-white transition-all duration-300"
+                className="border-2 border-white rounded-full py-3 px-8 text-lg font-medium hover:bg-gradient-to-r from-purple-500 to-pink-500 hover:text-white transition-all duration-300"
               >
                 Download CV
               </a>
