@@ -1,3 +1,4 @@
+import React from 'react';
 import Hero from '../components/Hero'
 import AboutMe from '../components/AboutMe'
 import Skills from '../components/Skills'
@@ -13,7 +14,6 @@ const Home = () => {
    <AboutMe/>
    <Skills/>
    <ProjectsList/>
-   {/* <Footer/> */}
    <Contact/>
     </>
   )

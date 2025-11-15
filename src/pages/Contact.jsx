@@ -1,3 +1,4 @@
+import React from 'react';
 import React, { useRef } from "react";
 import { FaPhoneAlt, FaEnvelope } from "react-icons/fa";
 import { FaSquareGithub } from "react-icons/fa6";
