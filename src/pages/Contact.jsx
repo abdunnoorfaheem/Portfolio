@@ -1,5 +1,5 @@
 import React from 'react';
-import React, { useRef } from "react";
+import  { useRef } from "react";
 import { FaPhoneAlt, FaEnvelope } from "react-icons/fa";
 import { FaSquareGithub } from "react-icons/fa6";
 import emailjs from "emailjs-com";
@@ -12,20 +12,20 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        "service_sgegzdr",   // Replace with your EmailJS Service ID
-        "template_it3hzl2",  // Replace with your EmailJS Template ID
+        "service_sgegzdr",   
+        "template_it3hzl2",  
         form.current,
-        "Egl8xkmq8HgxvhSa7"    // Replace with your EmailJS Public Key
+        "Egl8xkmq8HgxvhSa7"   
       )
       .then(
         (result) => {
           console.log(result.text);
-          alert("✅ Message sent successfully!");
+          alert("Message sent successfully!");
           e.target.reset();
         },
         (error) => {
           console.log(error.text);
-          alert("❌ Failed to send message. Try again.");
+          alert("Failed to send message. Try again.");
         }
       );
   };
