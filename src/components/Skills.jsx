@@ -30,13 +30,13 @@ const Skills = () => {
   return (
   <>
   <section className=''>
-      <div className="relative bg-black text-white py-20 px-6 sm:px-10 lg:px-20 overflow-hidden ">
+      <div className="relative bg-black text-white py-20 px-6 sm:px-10 lg:px-20 overflow-hidden">
     <div className="absolute inset-0 bg-gradient-to-b from-gray-900 to-black opacity-80 "></div>
     <motion.div
       initial={{ opacity: 0, y: -50 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 1 }}
-      className="relative z-10 text-center mb-12"
+      className="relative z-10 text-center mb-12 max-w-[1320px] m-auto"
     >
       <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-wide mb-6">My Skills</h1>
       <p className="text-base sm:text-lg lg:text-xl max-w-3xl mx-auto font-semibold">Mastering the tools and technologies that build the future of the web. Here’s a glimpse of my expertise : </p>
@@ -46,7 +46,7 @@ const Skills = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ delay: 0.5, duration: 1 }}
-      className="relative z-10 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6"
+      className="relative z-10 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6 max-w-[1320px] m-auto"
     >
       {skillImages.map((skill, index) => (
         <motion.li

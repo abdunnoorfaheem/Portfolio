@@ -5,7 +5,7 @@ import { Link } from "react-router";
 const AboutMe = () => {
   return (
     <section className="bg-gradient-to-r from-black via-gray-900 to-black text-white py-16">
-      <div className="container mx-auto px-6 lg:px-12">
+      <div className="max-w-[1320px] mx-auto px-6 lg:px-12">
        
         <motion.h2
           className="text-5xl font-bold text-center mb-8"
@@ -25,7 +25,7 @@ const AboutMe = () => {
           <p className="text-lg leading-relaxed text-center">
             I’m a passionate <span className="font-bold text-emerald-400">Frontend Developer</span> dedicated to crafting
             visually stunning and user-friendly web experiences. With expertise
-            in modern technologies like <span className="font-bold text-sky-400">React</span>, <span className="font-bold text-yellow-400">JavaScript</span>, and <span className="font-bold text-indigo-400">Tailwind CSS</span>, 
+            in modern technologies like <span className="font-bold text-emerald-400">Next Js </span>, <span className="font-bold text-sky-400">React </span>, <span className="font-bold text-yellow-400">JavaScript </span>, and <span className="font-bold text-indigo-400">Tailwind CSS</span>, 
             I transform ideas into responsive, seamless interfaces.  
           </p>
           <p className="text-lg leading-relaxed text-center mt-4">

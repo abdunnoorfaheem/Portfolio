@@ -1,16 +1,20 @@
 import React from "react";
 import img from "../assets/bg.png";
+import { ReactTyped } from "react-typed";
 
 const Hero = () => {
   return (
     <section className="bg-black text-white min-h-screen flex items-center">
-      <div className="container mx-auto px-6">
+      <div className="max-w-[1320px] m-auto px-6">
         <div className="flex flex-col md:flex-row items-center justify-between">
           {/* Left Section */}
           <div className="w-full md:w-1/2">
             <h1 className="text-5xl md:text-9xl font-bold tracking-wide">
               <i className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-pink-500 to-red-500">
-                Web Developer
+                <ReactTyped strings={["Frontend Developer", "React Developer"]}
+                  typeSpeed={60}
+                  backSpeed={40}
+                  loop />
               </i>
             </h1>
             <p className="text-lg md:text-2xl mt-5">

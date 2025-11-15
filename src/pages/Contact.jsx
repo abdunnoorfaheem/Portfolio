@@ -30,10 +30,10 @@ const Contact = () => {
   };
 
   return (
-    <footer className="bg-gradient-to-r from-gray-900 to-gray-800 text-white py-16">
-      <div className="container mx-auto flex flex-col md:flex-row items-center justify-between px-8 md:h-[100vh]">
+    <footer className="bg-gradient-to-r from-gray-900 to-gray-800 text-white py-2">
+      <div className="max-w-[1320px]  mx-auto flex flex-col md:flex-row items-center justify-between px-8 md:h-[100vh]">
         
-        {/* Left Info Section */}
+        
         <div className="text-center md:text-left mb-8 md:mb-0 max-w-lg">
           <h2 className="text-3xl md:text-6xl font-extrabold text-white">
             Get in Touch with Confidence
@@ -66,7 +66,7 @@ const Contact = () => {
           </div>
         </div>
 
-        {/* Form Section */}
+       
         <div className="w-full md:w-1/2 bg-gray-800 p-8 rounded-xl shadow-xl">
           <form ref={form} onSubmit={sendEmail}>
             <input

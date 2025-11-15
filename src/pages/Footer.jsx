@@ -1,13 +1,13 @@
 import React from "react";
 import { FaPhoneAlt, FaEnvelope } from "react-icons/fa";
 import { FaSquareGithub } from "react-icons/fa6";
-import FooterBottom from "../components/FooterBottom";
+
 
 const Footer = () => {
   return (
     <>
     <footer className="bg-gradient-to-r from-gray-900 to-gray-800 text-white py-16">
-      <div className="container mx-auto flex flex-col md:flex-row items-center justify-between px-8">
+      <div className="max-w-[1320px] mx-auto flex flex-col md:flex-row items-center justify-between px-8">
         
         <div className="text-center md:text-left mb-8 md:mb-0 max-w-lg">
           <h2 className="text-3xl md:text-6xl font-extrabold text-white">Get in Touch with Confidence</h2>

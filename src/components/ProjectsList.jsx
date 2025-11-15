@@ -11,28 +11,28 @@ const projects = [
     id: 1,
     title: "WoodenAura",
     image: projectOne,
-    github: "https://github.com/abdunnoorfaheem",
+    github: "https://github.com/abdunnoorfaheem/WoodenAura",
     live: "https://wooden-aura.vercel.app/",
   },
   {
     id: 2,
     title: "Bank Application",
     image: projectTwo,
-    github: "https://github.com/abdunnoorfaheem",
+    github: "https://github.com/abdunnoorfaheem/bank-application",
     live: "https://bank-application-nine.vercel.app/",
   },
-  {
-    id: 3,
-    title: "Geometries Genius",
-    image: projectThree,
-    github: "https://github.com/abdunnoorfaheem",
-    live: "https://geometries-genius.netlify.app/",
-  },
+  // {
+  //   id: 3,
+  //   title: "Geometries Genius",
+  //   image: projectThree,
+  //   github: "https://github.com/abdunnoorfaheem",
+  //   live: "https://geometries-genius.netlify.app/",
+  // },
   {
     id: 4,
     title: "cartivo",
     image: projectFour,
-    github: "https://github.com/abdunnoorfaheem",
+    github: "https://github.com/abdunnoorfaheem/cartivo",
     live: "https://cartivo-pink.vercel.app/",
   },
 ];
@@ -40,7 +40,7 @@ const projects = [
 const ProjectsList = () => {
   return (
     <section className="bg-gradient-to-r from-gray-900 to-black text-white py-16">
-      <div className="container mx-auto text-center">
+      <div className="max-w-[1320px] mx-auto text-center">
         <motion.h1 
           className="text-4xl md:text-6xl font-extrabold mb-16 tracking-widest text-white"
           initial={{ opacity: 0, y: -50 }}
